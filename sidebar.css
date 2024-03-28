@@ -1,0 +1,172 @@
+.sidebar-right {
+  position: fixed;
+  width: 30%;
+  min-width: 200px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  padding-inline: 8px;
+  padding-top: 80px;
+  z-index: 100;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.basket-icon{
+  height: 90px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.headline {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.content-emptyBasket {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.basket-content {
+  font-size: 14px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.basket-content button {
+  cursor: pointer;
+}
+
+.basket-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+  
+}
+
+.basket-button {
+  background-color: orange;
+  border: none;
+}
+
+.basket-button:hover {
+  background-color: rgb(255, 192, 75);
+}
+
+.dish-icon {
+  height: 12px;
+}
+
+.max-width {
+  max-width: 500px;
+}
+
+.sum-container {
+  display: flex;
+  align-items: center;
+}
+
+.order-button {
+  background-color: orange;
+  font-weight: bold;
+  border: none;
+  padding: 16px;
+  width: 150px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.order-button:hover {
+  background-color: rgb(255, 192, 75);
+}
+
+.margin-right {
+  padding: 8px;
+}
+
+.d-none {
+  display: none;
+}
+
+@media(max-width:1050px)
+{
+  .sidebar-right {
+    width: 45%;
+  }
+}
+
+@media(max-width:710px)
+{
+  .sidebar-right {
+  z-index: 950;
+  display: none;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  padding-inline: 1px;
+  padding-top: 8px;
+  overflow: scroll;
+  }
+
+  .openbasket-button {
+    z-index: 940;
+    background-color: orange;
+    font-weight: bold;
+    border: none;
+    padding: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    position: fixed;
+    bottom: 50px;
+    left: 125px;
+  }
+
+  .openbasket-button:hover {
+    background-color: rgb(255, 192, 75);
+  }
+
+  .close-button {
+    background-color: orange;
+    font-weight: bold;
+    border: none;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    display: flex;
+  }
+
+  .close-button:hover {
+    background-color: rgb(255, 192, 75);
+  }
+  
+  .basket-content {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px;
+    margin-bottom: 16px;
+  }
+
+  .margin-bottom {
+    margin-bottom: 12px;
+  }
+}
+
+.d-flex {
+  display: flex;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizzalando</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="./icon/lieferservice.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="sidebar.css">
+  <script src="script.js"></script>
+</head>
+
+<body onload="render()">
+  <header class="nav-bar">
+    <div><a href="index.html"><h3>PIZZALANDO</h3></a></div>
+    <div><b>Speisekarte</b></div>
+    <div class="right-section">
+      <a href=""><img src="./icon/german.png" alt="lenguage"></a>
+      <a href=""><img src="./icon/hamburger-menu.svg" alt="burger-menu"></a>
+    </div>
+  </header>
+
+  <div id="sidebar-right" class="sidebar-right">
+    <div class="max-width">
+      <span class="headline"><h2 >Warenkorb</h2></span>
+      <div id="contentEmptyBasket" class="content-emptyBasket">
+        <img class="basket-icon" src="./icon/tasche.png" alt="">
+        <h3>Fülle deinen Warenkorb</h3>
+        <p>Füge einige leckere Gerichte aus der<br>
+        Speisekarte hinzu und bestelle dein Essen.</p>
+      </div>
+
+      <div id="basket-content" class="basket-container">
+        
+      </div>
+
+      <div id="basketSum" class="sum-container">
+
+      </div>
+    </div>
+  </div>
+
+  <div class="header-restaurant">
+   <img class="header-image" src="./img/pizza.jpg" alt="">
+   <img class="logo" src="./icon/pizza-icon.png" alt="">
+  </div>
+
+  <div class="restaurant-container">
+    <div >
+      <h1>Piante Italiane</h1>
+      <img class="icon" src="./icon/bewertung.png" alt=""><p>(420 Bewertungen)</p>
+    </div>
+    <div>
+      <img class="icon" src="./icon/info.png" alt="">
+      <img class="icon" src="./icon/herz.png" alt="">
+    </div>
+  </div>
+
+  <div class="menu-slider">
+    <img class="icon" src="./icon/search.svg" alt="">
+    <a href="#ANTIPASTI">Antipasti</a>
+    <a href="#PIZZA">Pizza</a>
+    <a href="#PASTA">Pasta</a>
+    <a href="#DESSERT">Dessert</a>
+    <img class="icon" src="./icon/rechter-pfeil.png" alt="">
+  </div>
+
+  <div id="menu" class="menu-container">
+
+  </div>
+
+  <div><button id="openbasket-button" class="openbasket-button d-none" onclick="openBasket()">WARENKORB</button></div>
+
+  <div id="responsive-basket" class="responsive-basket" onclick="closeBasket(event)">
+    <div id="responsiveBasketSum" class="sum-container">
+
+    </div>
+  </div>
+
+</body>
+</html>
